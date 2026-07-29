@@ -1,16 +1,46 @@
 {% extends 'base.html' %}
 
-{% block title %}
-Dashboard
-{% endblock %}
+{% block title %}Dashboard{% endblock %}
 
 {% block content %}
 
-<div class="container mt-5">
+<div class="row">
 
-    <h1>Welcome to PennyWise </h1>
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Total Balance</h6>
+                <h3>₹0</h3>
+            </div>
+        </div>
+    </div>
 
-    <p>Your Expense Tracker is Ready.</p>
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Total Income</h6>
+                <h3>₹0</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Total Expenses</h6>
+                <h3>₹0</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6>Savings</h6>
+                <h3>₹0</h3>
+            </div>
+        </div>
+    </div>
 
 </div>
 
