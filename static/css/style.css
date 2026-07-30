@@ -1,4 +1,30 @@
-body{
+/* body{
     background:#f8f9fa;
     font-family:Arial, Helvetica, sans-serif;
 }
+
+.main-content{
+    margin-left:250px;
+    min-height:100vh;
+}
+
+.card{
+    border:none;
+    border-radius:12px;
+}
+
+.btn{
+    border-radius:8px;
+}
+
+.form-control{
+    border-radius:8px;
+}
+
+.navbar{
+    height:70px;
+}
+
+.sidebar{
+    width:250px;
+} */

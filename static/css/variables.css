@@ -1,0 +1,45 @@
+:root{
+
+    /* Brand */
+
+    --primary:#2563EB;
+    --primary-hover:#1D4ED8;
+
+    /* Success */
+
+    --success:#22C55E;
+
+    /* Danger */
+
+    --danger:#EF4444;
+
+    /* Warning */
+
+    --warning:#F59E0B;
+
+    /* Background */
+
+    --background:#F8FAFC;
+
+    --card:#FFFFFF;
+
+    /* Text */
+
+    --text:#0F172A;
+
+    --text-light:#64748B;
+
+    /* Border */
+
+    --border:#E2E8F0;
+
+    /* Radius */
+
+    --radius:16px;
+
+    /* Shadow */
+
+    --shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+}

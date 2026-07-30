@@ -10,36 +10,47 @@
 
     {% load static %}
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/variables.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/layout.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/components.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/animations.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 </head>
 <body>
 
     {% include 'includes/sidebar.html' %}
 
-    <div style="margin-left:250px;">
+    <div class="main-content">
 
         {% include 'includes/navbar.html' %}
 
-         {% if messages %}
+        {% if messages %}
             <div class="container-fluid mt-3">
                 {% for message in messages %}
-                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
-
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show">
                         {{ message }}
-
-                        <button type="button"
-                                class="btn-close"
+                        <button class="btn-close"
                                 data-bs-dismiss="alert">
                         </button>
-
                     </div>
                 {% endfor %}
-            </div>
+        </div>
         {% endif %}
 
         <div class="container-fluid mt-4">
 
             {% block content %}
+
             {% endblock %}
 
         </div>

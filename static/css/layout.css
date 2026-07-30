@@ -1,0 +1,35 @@
+.sidebar{
+
+width:260px;
+
+height:100vh;
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+background:#fff;
+
+border-right:1px solid var(--border);
+
+}
+
+.main-content{
+
+margin-left:260px;
+
+min-height:100vh;
+
+}
+
+.navbar{
+
+height:75px;
+
+background:#fff;
+
+border-bottom:1px solid var(--border);
+
+}

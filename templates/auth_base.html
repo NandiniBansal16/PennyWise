@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        {% block title %}
+
+        PennyWise
+
+        {% endblock %}
+
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/variables.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/components.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/animations.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+</head>
+
+
+
+<body class="bg-light">
+
+<div class="container">
+
+    <div class="row justify-content-center align-items-center"
+         style="min-height:100vh;">
+
+        <div class="col-md-6 col-lg-5">
+
+            {% if messages %}
+
+                {% for message in messages %}
+
+                    <div class="alert alert-{{ message.tags }}">
+
+                        {{ message }}
+
+                    </div>
+
+                {% endfor %}
+
+            {% endif %}
+
+            {% block content %}
+
+            {% endblock %}
+
+        </div>
+
+    </div>
+
+</div>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<div class="text-center mt-4 text-muted">
+
+    <small>
+
+        © 2026 PennyWise
+        • Personal Expense Tracker
+
+    </small>
+
+</div>
+
+</body>
+
+</html>
